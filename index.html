@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content=">動画を駆使した、高品質なWebサイト制作！忘れられない×高品質を届けます。">
+    <meta name="keywords" content="ホームページ制作,高品質,動画,HTML,CSS,JavaScript,デザイン,レイアウト,SEO">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script>
+      $(function() {
+        const hum = $('#hamburger, .close')
+        const nav = $('.sp-nav')
+        hum.on('click', function(){
+          nav.toggleClass('toggle');
+        });
+      });
+  </script>
+    <title>Wevies｜サンプル１</title>
+  </head>
+
+  <body>
+
+        <!-- ################################
+    #
+    #＿＿ヘッダー
+    #
+    ##################################-->
+    <!-- ヘッダー＿ナビゲーションメニュー -->
+    <header class="header fadein-B">
+      <nav>
+        <ul class="main-nav">
+          <li class="logo">
+            <img src="images/logo.png" alt="" width="100px">
+          </li>
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+          <li><a href="#">Menu 4</a></li>
+          <li><a href="#">Menu 5</a></li>
+        </ul>
+      </nav>
+      <!-- スマホハンバーガー -->
+    </header> 
+    
+    <div id="nav-drawer">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">
+        <div class="m50">
+          <i class="fas fa-home fa-lg"></i>
+          <a href="" class="btn02">HOME</a>
+        </div>
+        <div class="m50">
+         <i class="fas fa-sitemap fa-lg"></i>
+         <a href="" class="btn02">SiteMap</a>
+        </div>
+        <div class="m50">
+          <i class="fas fa-map-marker-alt fa-lg"></i>
+          <a href="" class="btn02">Acsess</a>
+        </div>
+        <div class="m50">        
+          <i class="fas fa-file-alt fa-lg"></i>
+          <a href="" class="btn02">info</a>
+        </div>
+        <div class="m50">        
+          <i class="fas fa-question-circle fa-lg"></i>
+          <a href="" class="btn02">Q&A</a>
+        </div>
+        <div class="m50">        
+          <i class="fas fa-star fa-lg"></i>
+          <a href="" class="btn02">SNS</a>
+        </div>
+      </div>
+    </div>
+
+      <!-- ################################
+    #
+    #＿＿ビデオコンテンツ
+    #
+    ##################################-->
+    <dir class="w-in set">
+      <p class="set-in poSecVideo fadein-A">
+        <img src="images/logo2.png" alt="" width="200px"><br>サンプル青
+      </p>
+    </dir>
+    <!-- メインビデオ＿コンテンツ -->
+    <div class="w-video">
+      <video src="images/movie_main.mp4" autoplay loop muted poster="images/movie_main.mp4"></video>
+    </div>
+
+    　 <!-- ################################
+      #
+      #＿＿メイン
+      #
+      ##################################-->
+    <main>
+
+      <!-- コンテンツ＿Type.1　縦2カラム　見出し＞画像 -->
+      <section class="w_max">
+        <div class="w_in flexStart-A-R set" id="shadow">
+          <div class="colum2 bg01">
+            <p class="img_Up set-in poSec01-img">
+              Section.1</p>
+          </div>
+          <div class="colum2 m100">
+            <h1>大見出し</h1>
+            <p>＿＿＿＿＿＿</p><br>
+            <p>段落１ pタグです</p>
+            <p>段落２ pタグです</p>
+            <p>段落３ pタグです</p> 
+            <a href="#" class="btn01 set-in poSec01-A">View</a>
+            <a href="#" class="btn02 set-in poSec01-B">More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 間の遊び 『こんにちは』-->
+      <div class="foo">
+        <span class="letter" data-letter="H">H</span>
+        <span class="letter" data-letter="E">E</span>
+        <span class="letter" data-letter="L">L</span>
+        <span class="letter" data-letter="L">L</span>
+        <span class="letter" data-letter="O">O</span>
+      </div>
+
+      <!-- コンテンツ＿Type.1　縦2カラム　画像＞見出し -->
+      <section class="w_max">
+        <div class="w_in flexStart-A set" id="shadow">
+          <div class="colum2 bg01">
+            <p class="img_Up set-in poSec01-img">
+              Section.2</p>
+          </div>
+          <div class="colum2 m100">
+            <h1>大見出し</h1>
+            <p>＿＿＿＿＿＿</p><br>
+            <p>段落１ pタグです</p>
+            <p>段落２ pタグです</p>
+            <p>段落３ pタグです</p>
+            <a href="#" class="btn01 set-in poSec01-A">View</a>
+            <a href="#" class="btn02 set-in poSec01-B">More</a>
+          </div>
+        </div>
+      </section>
+
+       <!-- 間の遊び 『ありがとう（見てくれてみたいな）』-->
+      <div class="foo">
+        <span class="letter" data-letter="T">T</span>
+        <span class="letter" data-letter="H">H</span>
+        <span class="letter" data-letter="A">A</span>
+        <span class="letter" data-letter="N">N</span>
+        <span class="letter" data-letter="K">K</span>
+        <span class="letter" data-letter="S">S</span>
+      </div>
+
+      <!-- コンテンツ＿Type.2　2カラム　画像＞見出し -->
+      <section class="w_max">
+        <div class="w_in flexStart-B set" id="shadow">
+          <div class="colum2 bg01">
+            <p class="img_Up set-in poSec01-img">
+              Section.3</p>
+          </div>
+          <div class="colum2">
+            <h1>大見出し</h1>
+            <p>＿＿＿＿＿＿</p><br>
+            <p>段落１ pタグです</p>
+            <p>段落２ pタグです</p>
+            <p>段落３ pタグです</p>
+            <a href="#" class="btn01 set-in poSec01-A">View</a>
+            <a href="#" class="btn02 set-in poSec01-B">More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- コンテンツ＿Type.2　2カラム　見出し＞画像 -->
+      <section class="w_max">
+      <div class="w_in flexStart-B-R set" id="shadow">
+        <div class="colum2 bg01">
+          <p class="img_Up set-in poSec02-img">
+            Section.3</p>
+        </div>
+        <div class="colum2">
+          <h1>大見出し</h1>
+          <p>＿＿＿＿＿＿</p><br>
+          <p>段落１ pタグです</p>
+          <p>段落２ pタグです</p>
+          <p>段落３ pタグです</p>
+          <a href="#" class="btn01 set-in poSec02-A">
+            View</a>
+          <a href="#" class="btn02 set-in poSec02-B">
+            More</a>
+        </div>
+      </div>
+    </section>
+
+      <!-- 間の遊び 『私たちはこれ（会社概要的な）』-->
+      <div class="foo">
+        <span class="letter" data-letter="W">W</span>
+        <span class="letter" data-letter="e">e</span>
+        <span class="letter" data-letter="T">T</span>
+        <span class="letter" data-letter="h">h</span>
+        <span class="letter" data-letter="i">i</span>
+        <span class="letter" data-letter="s">s</span>
+      </div>
+
+    <!-- コンテンツ＿Type.3　3カラム　画像＞画像＞画像　×２ -->
+    <section class="w_wax">
+      <div class="w-in flexStart-C set">
+        <div class="colum3 bg02 dark hover01" 
+        style="background-blend-mode: multiply;"><!--背景に重ね -->
+          <p class="m100">Step.1<br>ここはテキストです</p>
+        </div>
+        <div class="colum3 bg02 dark hover01" 
+        style="background-blend-mode:multiply;"><!--背景に重ね -->
+          <p class="m100">Step.2<br>ここはテキストです</p>
+        </div>
+        <div class="colum3 bg02 dark hover01" 
+        style="background-blend-mode:multiply;"><!--背景に重ね -->
+          <p class="m100">Step.3<br>ここはテキストです</p>
+        </div>
+      </div>
+    </section>
+    <section class="w_wax"><!--上と同じ＿レイアウト構成 -->
+      <div class="w-in flexStart-C set">
+        <div class="colum3 bg02 dark hover01" 
+        style="background-blend-mode: multiply;"><!--背景に重ね -->
+          <p class="m100">Step.1<br>ここはテキストです</p>
+        </div>
+        <div class="colum3 bg02 dark hover01" 
+        style="background-blend-mode:multiply;"><!--背景に重ね -->
+          <p class="m100">Step.2<br>ここはテキストです</p>
+        </div>
+        <div class="colum3 bg02 dark hover01" 
+        style="background-blend-mode:multiply;"><!--背景に重ね -->
+          <p class="m100">Step.3<br>ここはテキストです</p>
+        </div>
+      </div>
+    </section> 
+
+       <!-- 間の遊び 『私たちは見る（企業理念的な）』-->
+      <div class="foo">
+        <span class="letter" data-letter="W">W</span>
+        <span class="letter" data-letter="e">e</span>
+        <span class="letter" data-letter="V">V</span>
+        <span class="letter" data-letter="i">i</span>
+        <span class="letter" data-letter="e">e</span>
+        <span class="letter" data-letter="w">w</span>
+      </div>
+      <!-- コンテンツ＿Type.1　縦2カラム　見出し＞画像 -->
+      <section class="w_max">
+        <div class="w_in flexStart-A-R set" id="shadow">
+          <div class="colum2 bg01">
+            <p class="img_Up set-in poSec01-img">
+              Section.1</p>
+          </div>
+          <div class="colum2 m100">
+            <h1>大見出し</h1>
+            <p>＿＿＿＿＿＿</p><br>
+            <p>段落１ pタグです</p>
+            <p>段落２ pタグです</p>
+            <p>段落３ pタグです</p> 
+            <a href="#" class="btn01 set-in poSec01-A">View</a>
+            <a href="#" class="btn02 set-in poSec01-B">More</a>
+          </div>
+        </div>
+      </section>
+       <!-- 間の遊び 『ニュース』-->
+       <div class="foo">
+        <span class="letter" data-letter="N">N</span>
+        <span class="letter" data-letter="e">e</span>
+        <span class="letter" data-letter="w">w</span>
+        <span class="letter" data-letter="s">s</span>
+      </div>
+      <!-- コンテンツ＿Type.3　横2カラム　見出し＞画像 -->
+      <section class="w_wax">
+        <div class="w-in flexStart-A set">
+          <div class="colum2">
+            <h1>最新ニュース</h1>
+            <p>＿＿＿＿＿＿</p><br>
+          </div>
+        </div>
+          <div class="w-in flexStart-C  m20 set">
+            <div class="colum4">
+              <p>2020/7/27</p>
+            </div>
+            <div class="colum4 bd01">
+              <p>サイト更新
+              </p>
+            </div>
+            </div>
+
+        
+
+
+        
+      </section>
+
+
+   
+    </main>
+
+        <!-- ################################
+      #
+      #＿＿フッター
+      #
+      ##################################-->
+    <footer class="footer">
+
+      <dir class="w_in m20 flexStart-C">
+      <div>
+        <i class="fas fa-home fa-lg"></i>
+        <a href="">HOME</a>
+      </div>
+      <div>
+          <i class="fas fa-sitemap fa-lg"></i>
+          <a href="">SiteMap</a>
+      </div>
+      <div>
+        <i class="fas fa-map-marker-alt fa-lg"></i>
+        <a href="">Acsess</a>
+      </div>
+      <div>
+        <i class="fas fa-file-alt fa-lg"></i>
+        <a href="">info</a>
+      </div>
+      <div>
+        <i class="fas fa-question-circle fa-lg"></i>
+        <a href="">Q&A</a>
+      </div>
+      <div>
+        <i class="fas fa-star fa-lg"></i>
+        <a href="">SNS</a>
+      </div>
+    </dir>
+
+    <div class="w_in flexStart-C">
+      <div>
+        <nav>
+          <ul class="footer-nav">
+            <li class="logo">
+              <h3>●見出し１</h3>
+            </li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+            <li><a href="#">Menu 5</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <nav>
+          <ul class="footer-nav">
+            <li class="logo">
+              <h3>●見出し２</h3>
+            </li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+            <li><a href="#">Menu 5</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <nav>
+          <ul class="footer-nav">
+            <li class="logo">
+              <h3>●見出し３</h3>
+            </li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+            <li><a href="#">Menu 5</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <nav>
+          <ul class="footer-nav">
+            <li class="logo">
+              <h3>●見出し４</h3>
+            </li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+            <li><a href="#">Menu 5</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <nav>
+          <ul class="footer-nav">
+            <li class="logo">
+              <h3>●見出し５</h3>
+            </li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+            <li><a href="#">Menu 5</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- copyright -->
+    </footer>
+    <div class="set">
+      <p class="set-in footerPos">
+        @2020 Wevies Blue Presented by REGLOS
+      </p>
+    </div>
+<script>
+  	//フェードイン用のコードです
+	$(function(){
+		$(window).on('load scroll', function() {
+			$(".show").each(function() {
+				var winScroll = $(window).scrollTop();
+				var winHeight = $(window).height();
+				var scrollPos = winScroll + (winHeight * 0.9);
+				if($(this).offset().top < scrollPos) {
+					$(this).css({opacity: 1, transform: 'translate(0, 0)'});
+				}
+			});
+		});
+	});
+	//フェードイン用のコードはここまでです
+
+	//ヘッダーの高さと背景色の変更
+	$(function () {
+		const header = $('#header');
+		$(window).on('load scroll' ,function () {
+			var headerHeight = header.innerHeight();
+
+			$(window).on('scroll' ,function () {
+				if ( $(this).scrollTop() > 100 ) {
+					header.addClass('min-header');
+				} else {
+					header.removeClass('min-header');
+				}
+			});
+		});
+});
+</script>
+  </body>
+
+</html>
